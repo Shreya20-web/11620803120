@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Afformed Test</title>
+</head>
+<body>
+    <script>
+        
+        fetch('http://localhost:8080/question1?url=http://20.244.56.144/numbers/primes&url=http://20.244.56.144/numbers/fibo&url=http://20.244.56.144/numbers/odd')
+            .then(response => response.json()) 
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error)); 
+    </script>
+</body>
+</html>
